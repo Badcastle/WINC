@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- hier zet je de code in de head tags -->
+    <title>WINC FLEX</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+    <div class="container">
+        <header>
+            <div class="image-wrapper">
+                <img class="winc-logo" src="WINC logo.png" alt="winc logo" height="50px">
+            </div>
+            <nav>
+                <ul>
+                    <li class="menu-item"><a href="index.html">
+                            <h3>HOME</h3>
+                        </a>
+                    </li>
+                    <li class="menu-item"><a href="about.html">
+                            <h3>About baldy</h3>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="https://www.google.com/" target="_blank">
+                            <h3>Wanna Google?</h3>
+                        </a>
+                    </li>
+                    <li class="menu-item"><a href="blog.html">
+                            <h3>Blog</h3>
+                        </a>
+                    </li>
+                    <li class="menu-item"><a href="contact.html">
+                            <h3>Contact</h3>
+                        </a>
+                    </li>
+                </ul>
+
+            </nav>
+            <!-- 
+                  1. Branding
+                  2. NAV 
+                -->
+        </header>
+
+        <main>
+            <form name="contact" method="POST" data-netlify="true">
+                <input type="name" name="name">_name<br>
+                <input type="email" name="email-input" id="email-input">_email<br>
+                <input type="tel" name="telnr" id="telnr">_tel <br>
+                <input type="age" name="age" id="age">_age <br>
+                <input type="date" name="birthday" id="birthday">_birthday <br>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br>
+                <section>
+                    Favourite cuisine <br>
+                    <input type="checkbox" name="cuisine1" value="French">
+                    <label for="cuisine1"> French</label><br>
+                    <input type="checkbox" name="cuisine2" value="Italian">
+                    <label for="cuisine2"> Italian</label><br>
+                    <input type="checkbox" name="cuisine3" value="Spanish">
+                    <label for="cuisine3"> Spanish</label><br>
+                    <input type="checkbox" name="cuisine4" value="Arabic">
+                    <label for="cuisine4"> Arabic</label><br>
+                </section>
+                <label for="favcolor">Select your favorite color:</label>
+                <input type="color" id="favcolor" name="favcolor" value="#ff0000"> <br>
+                <textarea name="Loads of text" id="text-input" cols="80" rows="5"></textarea>_bio<br>
+                Upload most recent recipe <input type="file" name="file" id="file"><br>
+                <a href="https://www.ah.nl/allerhande" target="_blank">_recipe URL</a> <br>
+                <input type="reset">
+                <button type="submit">Submit the lot</button>
+            </form>
+        </main>
+
+        <footer>
+
+        </footer>
+    </div>
+</body>
+
+</html>
