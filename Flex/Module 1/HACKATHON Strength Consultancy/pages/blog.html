@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/style.css">
+    <title>* BETA * Strengths Consultancy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        // JQuery for hamburger
+        // Shorthand for $( document ).ready()
+        $(function () {
+            $(".toggle").on("click", function () {
+
+                if ($(".menu-item").hasClass("active")) {
+                    $(".menu-item").removeClass("active");
+                } else {
+                    $(".menu-item").addClass("active");
+                }
+            })
+        });
+    </script>
+    <style>
+        section {
+            margin: 1rem 2rem 1rem 3rem;
+        }
+
+
+        article {
+            margin: .5rem 0;
+        }
+
+        aside {
+            float: right;
+            width: 30%;
+            background-color: #d1a827;
+            color: antiquewhite;
+            font-size: .8rem;
+        }
+
+        hr {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="body-container">
+        <header class="header">
+            <nav>
+                <ul class="menu">
+                    <li class="logo"><a href="/index.html"><strong>Strengths</strong><br> Consultancy</a></li>
+                    <li class="menu-item"><a href="/index.html">Home</a></li>
+                    <li class="menu-item"><a href="blog.html">Blog </a> </li>
+                    <li class="menu-item"><a href="who_we_are.html">Who we are</a></li>
+                    <li class="menu-item"><a href="contact.html">Contact</a></li>
+                    <li class="toggle"><span class="bars"></span></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="main-wrapper">
+            <main class="main">
+                <h1 class="blog-title">Totally blog</h1>
+                <section>
+                    <article>
+                        <h3>
+                            TOTALLY SECTION 1
+                        </h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde minima similique ipsam, enim
+                            saepe
+                            ducimus aspernatur nostrum aut recusandae temporibus ullam voluptatum? Obcaecati doloremque
+                            provident amet deserunt architecto et sit!</p>
+                        <br>
+                        <aside>
+                            <h4>
+                                SIDE THINGS 1
+                            </h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus cumque nostrum
+                                obcaecati,
+                                a
+                            </p>
+                        </aside>
+                        <h3>
+                            TOTALLY SECTION 2
+                        </h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde minima similique ipsam, enim
+                            saepe
+                            ducimus aspernatur nostrum aut recusandae temporibus ullam voluptatum? Obcaecati doloremque
+                            provident amet deserunt architecto et sit!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde minima similique ipsam, enim
+                            saepe
+                            ducimus aspernatur nostrum aut recusandae temporibus ullam voluptatum? Obcaecati doloremque
+                            provident amet deserunt architecto et sit!</p>
+                    </article>
+
+
+                    <hr>
+
+                    <article>
+                        <h3>
+                            TOTALLY SECTION 3
+                        </h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde minima similique ipsam, enim
+                            saepe
+                            ducimus aspernatur nostrum aut recusandae temporibus ullam voluptatum? Obcaecati doloremque
+                            provident amet deserunt architecto et sit!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde minima similique ipsam, enim
+                            saepe
+                            ducimus aspernatur nostrum aut recusandae temporibus ullam voluptatum? Obcaecati doloremque
+                            provident amet deserunt architecto et sit!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde minima similique ipsam, enim
+                            saepe
+                            ducimus aspernatur nostrum aut recusandae temporibus ullam voluptatum? Obcaecati doloremque
+                            provident amet deserunt architecto et sit!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde minima similique ipsam, enim
+                            saepe
+                            ducimus aspernatur nostrum aut recusandae temporibus ullam voluptatum? Obcaecati doloremque
+                            provident amet deserunt architecto et sit!</p>
+                    </article>
+                </section>
+
+
+
+                <div class="contact-box">
+                    <h3 class="contact-box-header">
+                        Want to get in touch?
+                    </h3>
+                    <a href="contact.html" class="contact-box-button">Contact</a>
+                    <h4 class="contact-box-subheader">
+                        Let's meet and have coffee
+                    </h4>
+                </div>
+            </main>
+        </div>
+        <footer class="footer">
+            &#xa9; <a href="https://strengthsconsultancy.nl/en/strengthsconsultancyen/" target="_blank"
+                alt="Real strengthsconsultancy website">
+                <strong>Strengths Consultancy</strong></a>
+        </footer>
+
+    </div>
+</body>
+
+</html>
