@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+
+body {
+    letter-spacing: -0.03rem;
+}
+
+.body-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #f3f3f3;
+    display: grid;
+    grid-template-columns: 1fr 25fr 1fr;
+}
+
+.center-container {
+    background-color: #ffffff;
+    grid-column: 2 / 3;
+    border: 1px solid #d6dee0;
+    border-top: none;
+    border-bottom: none;
+    /* Border instead of box shadow */
+    /* box-shadow: 0 3px 0 3px pink; */
+}
+
+.card-container {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.cards {
+    margin: 10px;
+    background-color: #ffffff;
+    border: solid 2px #ececec;
+    border-radius: 5px;
+    /* border-style: outset; */
+    /* box-shadow: 5px 10px #888888; */
+}
+
+.who-and-noti-wrapper {
+    padding: 13px;
+}
+
+.whothat {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    height: 75px;
+}
+
+.name,
+.subheader {
+    grid-column: 1 / 5;
+}
+
+.name {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #1d1d1d;
+    grid-row: 1 / 2;
+}
+
+.subheader {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #a6a6a6;
+    grid-row: 2 / 3;
+}
+
+.avatar {
+    grid-column: 5 / 5;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(255, 0, 170);
+}
+
+.notification {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #646464;
+}
+
+.buttons {
+    border-top: 1px solid #ececec;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.approve,
+.deny {
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 10px;
+    border: 2px solid;
+    width: 40%;
+    text-align: center;
+}
+
+.approve {
+    color: #1ac241f1;
+    border-color: #1ac241f1;
+    border-radius: 8px 0 0 8px;
+}
+
+.deny {
+    color: #ee0619f1;
+    border-color: #ee0619f1;
+    border-radius: 0 8px 8px 0;
+}
+
+@media (min-width: 900px) {
+    .body-container {
+        display: grid;
+        grid-template-columns: 1fr 800px 1fr;
+    }
+}
+
+@media (max-width: 670px) {
+    .body-container {
+        display: grid;
+        grid-template-columns: 1fr 440px 1fr;
+    }
+
+    .card-container {
+        display: block;
+    }
+
+    .cards {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 490px) {
+    .body-container {
+        display: grid;
+        grid-template-columns: 5% 90% 5%;
+    }
+}
