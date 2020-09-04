@@ -1,0 +1,34 @@
+.menu {
+    background-color: rgb(167, 137, 250);
+    padding: 10px;
+}
+
+
+.menu-items li:hover {
+    background-color: cornflowerblue;
+}
+
+.pseudo-1:hover {
+    color: aqua;
+    font-weight: 900;
+}
+
+.pseudo-2:active {
+    color: rgb(255, 0, 0);
+    font-style: italic;
+}
+
+.pseudo-3:visited {
+    color: rgb(229, 255, 0);
+}
+
+.text:focus {
+    color: green;
+    border: 2px solid aquamarine;
+    font-size: 20px;
+}
+
+.menu ul li {
+    padding: 10px;
+    display: inline;
+}
