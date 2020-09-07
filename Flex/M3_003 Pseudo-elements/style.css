@@ -1,0 +1,40 @@
+body {
+    background: #231F20;
+    text-align: center;
+}
+
+h1 {
+    color: #FFF;
+    font-family: 'Oswald';
+    font-weight: 700;
+    position: relative;
+    margin: 30px auto;
+    text-transform: uppercase;
+    width: 500px;
+}
+
+
+
+.h1der::before {
+    content: '';
+    background: #4A90E2;
+    display: inline-block;
+    position: absolute;
+    width: 25px;
+    height: 30px;
+    border-radius: 25px 0px 0px 25px;
+    top: 10px;
+    left: -15px;
+}
+
+.h1der::after {
+    content: '';
+    background: #4A90E2;
+    display: inline-block;
+    position: absolute;
+    width: 25px;
+    height: 30px;
+    border-radius: 0px 25px 25px 0px;
+    top: 10px;
+    left: 490px;
+}
