@@ -1,0 +1,42 @@
+body {
+    font-family: sans-serif;
+    font-weight: 500;
+}
+
+.columns {
+    display: flex;
+    margin: 20px 40px;
+    background-color: rgba(236, 236, 236, 0.719);
+}
+
+.block {
+    margin: 15px 25px;
+    background: rgb(149, 172, 194);
+}
+
+ul,
+ol {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    text-align: center;
+    line-height: 2;
+}
+
+/* ex 1 */
+/*  select column 1 -> first children */
+.one li:nth-child(1) {
+    background-color: rgb(189, 209, 235);
+}
+
+/*  ex 2 */
+/*   selext column 2 -> 7th child */
+.deez {
+    background-color: rgb(189, 209, 235);
+}
+
+.three div:nth-child(odd) li:nth-child(-n+3) {
+    background-color: rgb(189, 209, 235);
+}
