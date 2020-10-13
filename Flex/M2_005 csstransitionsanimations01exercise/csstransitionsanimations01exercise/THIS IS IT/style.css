@@ -1,0 +1,45 @@
+/* 
+================================
+A sample transition.
+Click on the large ball on the left to see the animation.
+*/
+.anim:active .ball-one {
+  left: 150px;
+  transition: left .5s ease-in;
+}
+
+/* 
+================================
+Your code here! 
+Make the small ball on the right roll to the right when the large one hits it.
+
+*/
+.anim:active .ball-two {
+  margin-left: 1000px;
+  transition: margin-left 4500ms cubic-bezier(0.05, 0.23, 0.415, 0.955) 470ms;
+}
+
+
+/* 
+================================
+Necessary CSS Below-- no need to edit */
+
+.ball-one {
+  background: #ff97C0;
+  border-radius: 50%;
+  position: absolute;
+  top: 0px;
+  left: 00px;
+  width: 200px;
+  height: 200px;
+}
+
+.ball-two {
+  background: #0097C0;
+  border-radius: 50%;
+  position: relative;
+  top: 100px;
+  left: 300px;
+  width: 100px;
+  height: 100px;
+}
